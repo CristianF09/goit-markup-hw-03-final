@@ -2,157 +2,199 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio</title>
+    <title>Homework</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="global-header">
-      <div class="container-menu">
-        <link rel="STUDIO" href="index.html" />
-        <a href="index.html" class="logo">WEB</a>
-        <a href="index.html">Studio</a>
-        <a href="Portofolio.html">Portofolio</a>
-        <a href="Conctacts.html">Conctacts</a>
-      </div>
-      <div class="container-info">
-        <a href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
-        <a href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+    <header class="page-header">
+      <div class="container">
+        <a href="./index.html" class="logo-anchor undecorate-text"
+          ><span>Web</span>Studio</a
+        >
+        <nav>
+          <ul class="nav-links unstyle-list">
+            <li class="nav-links-item">
+              <a href="./index.html" class="undecorate-text">Studio</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="./portfolio.html" class="undecorate-text">Portofolio</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="" class="undecorate-text">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact unstyle-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="mail undecorate-text"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+12127724150" class="phone undecorate-text"
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <sections class="hero-section">
-        <div>
+      <section class="hero-section section">
+        <div class="container">
           <h1 class="hero-title">
-            Effective Solutions <br />
-            for Your Business
+            EFFECTIVE SOLUTIONS FOR <br />
+            YOUR BUSINESS
           </h1>
-          <button type="button" class="button-service">Order Service</button>
+          <button type="button" class="hero-button">Request our service</button>
         </div>
-      </sections>
-
-      <sections class="container-section1">
-        <div class="card">
-          <h3>Strategy</h3>
-          <p>
-            Our goal is to identify the business problem to walk away with the
-            perfect and creative solution.
-          </p>
+      </section>
+      <!-- create section our characteristics -->
+      <section class="characteristics section side-padding">
+        <div class="container">
+          <ul class="unstyle-list">
+            <li class="description-card">
+              <h4 class="description-title">ATTENTION TO DETAILS</h4>
+              <p class="description-text">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="description-card">
+              <h4 class="description-title">PUNCTUALITY</h4>
+              <p class="description-text">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </li>
+            <li class="description-card">
+              <h4 class="description-title">PLANNING</h4>
+              <p class="description-text">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="description-card">
+              <h4 class="description-title">MODERN TECHNOLOGIES</h4>
+              <p class="description-text">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
         </div>
-        <div clas="card">
-          <h3>Punctualit</h3>
-          <p>
-            Bring the key message to the brand's audience for the best price
-            within the shortest possible time.
-          </p>
+      </section>
+      <!-- create what we do section -->
+      <section class="what-we-do section side-padding">
+        <div class="container">
+          <h2 class="what-we-do-title">What we do</h2>
+          <ul class="presentation-image unstyle-list">
+            <li>
+              <img
+                class="what-we-do-image"
+                src="./images/what-we-do-1.jpg"
+                alt="first image with what we do"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                class="what-we-do-image"
+                src="./images/what-we-do-2.jpg"
+                alt="second image with what we do"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                class="what-we-do-image"
+                src="./images/what-we-do-3.jpg"
+                alt="third image with what we do"
+                width="370"
+              />
+            </li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Diligence</h3>
-          <p>
-            Research and confirm brands that present the strongest digital
-            growth opportunities and minimize risk.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Technologies</h3>
-          <p>
-            Design practice focused on digital experiences. We bring forth a
-            deep passion for problem-solving.
-          </p>
-        </div>
-      </sections>
-      <sections class="container-section2">
-        <div class="title-section2">
-          <h2>What Are We Do</h2>
-        </div>
-        <div id="card">
-          <img
-            src="./images/Screen.jpg"
-            alt="Screen"
-            width="360px"
-            height="300px"
-          />
-        </div>
-        <div id="card">
-          <img
-            src="./images/Apps.jpg"
-            alt="Apps"
-            width="360px"
-            height="300px"
-          />
-        </div>
-        <div id="card">
-          <img
-            src="./images/Mobile Phone.jpg"
-            alt="Mobile Phone"
-            width="360px"
-            height="300px"
-          />
-        </div>
-      </sections>
-      <section class="container-section3">
-        <div class="title-section3">
-          <h2>Our Team</h2>
-        </div>
-        <div>
-          <img
-            src="images/img (4).jpg"
-            alt="Mark Guerrero - Product Designer"
-            width="264px"
-            height="260px"
-          />
-          <h3>Mark Guerrero</h3>
-          <p>Product Designer</p>
-        </div>
-        <div>
-          <img
-            src="images/img (1) (1).jpg"
-            alt="Tom Ford - Frontend Developer"
-            width="264px"
-            height="260px"
-          />
-          <h3>Tom Ford</h3>
-          <p>Frontend Developer</p>
-        </div>
-        <div>
-          <img
-            src="images/img (2) (1).jpg"
-            alt="Camila Garcia - Marketing"
-            width="264px"
-            height="260px"
-          />
-          <h3>Camila Garcia</h3>
-          <p>Marketing</p>
-        </div>
-        <div>
-          <img
-            src="images/img (3) (1).jpg"
-            alt="Daniel Wilson - UI Designer"
-            width="264px"
-            height="260px"
-          />
-          <h3>Daniel Wilson</h3>
-          <p>UI Designer</p>
+      </section>
+      <!-- create our team section -->
+      <section class="team-members section side-padding">
+        <div class="container">
+          <h2 class="team-members-title">Our Team</h2>
+          <ul class="our-team unstyle-list">
+            <li class="team-card">
+              <img
+                class="team-person-image"
+                src="./images/team-img-1.jpg"
+                alt="first team member image"
+                width="270"
+              />
+              <h3 class="person-name">Christopher Walker</h3>
+              <p class="person-job">Product Designer</p>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-person-image"
+                src="./images/team-img-2.jpg"
+                alt="second team member image"
+                width="270"
+              />
+              <h3 class="person-name">Kylie Evans</h3>
+              <p class="person-job">Frontend Developer</p>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-person-image"
+                src="./images/team-img-3.jpg"
+                alt="third team member image"
+                width="270"
+              />
+              <h3 class="person-name">Ryan Harris</h3>
+              <p class="person-job">Marketing</p>
+            </li>
+            <li class="team-card">
+              <img
+                class="team-person-image"
+                src="./images/team-img-4.jpg"
+                alt="last team member image"
+                width="270"
+              />
+              <h3 class="person-name">Tyler Moore</h3>
+              <p class="person-job">UI Designer</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="global-footer">
-        <link rel="STUDIO" href="index.html" />
-        <a href="index.html" class="logo-footer">WEB</a>
-        <br />
-        <div class="footer-title">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </div>
-      </section>
+    <!-- creating footer -->
+    <footer class="page-footer side-padding">
+      <div class="container">
+        <a href="./index.html" class="logo-anchor undecorate-text footer-logo"
+          ><span>Web</span>Studio</a
+        >
+        <address class="footer-address">
+          695 Park Ave, NY 10065, USA <br />
+          <a
+            href="mailto:info@devstudio.com"
+            class="footer-mail undecorate-text"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+12127724150" class="footer-phone undecorate-text"
+            >+1 212-772-4150</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>
